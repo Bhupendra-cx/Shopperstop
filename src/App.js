@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from  '../src/component/Header';
+import ManSection from './component/ManSection'
+import './All_sections_css/Global.css';
+import WomenSection from './component/WomenSection'
+import BeautySection from './component/BeautySection'
+import BrandsSection from './component/BrandsSection'
+import KidsSection from './component/KidsSection'
+import HomePage from './component/HomePage';
+import Footer from './component/Footer';
+import {Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/man' element={<ManSection />} />
+        <Route path='/women' element={<WomenSection />} />
+        <Route path='/beauty' element={<BeautySection />} />
+        <Route path='/brands' element={<BrandsSection />} />
+        <Route path='/kids' element={<KidsSection />} />
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

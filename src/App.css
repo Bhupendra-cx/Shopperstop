@@ -1,3 +1,10 @@
+*, ::after, ::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +12,76 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.container{
+  max-width: 1270px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+h3.product_heading {
+  margin: 0 0 20px;
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+p.product_description,
+p.price {
+  margin: 0 0 15px;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  padding: 0;
+  font-weight: 500;
+}
+
+p.price{
+  font-weight: 700;
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+a.btn {
+  max-width: 150px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+  border-radius: 10px;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 15px 0 0;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+a.btn:hover{
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,1);
+  box-shadow: 0px 0px 5px 2px rgba(0,0,0,1);
+}
+
+body{
+  background-color: bisque;
 }
 
 @media (prefers-reduced-motion: no-preference) {

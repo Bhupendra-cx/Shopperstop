@@ -1,0 +1,16 @@
+@media (max-width: 1300px){
+    .cust_Products_grid_section .inner_all_prod {
+        gap: 10px;
+    }
+}
+@media (max-width: 767px){
+    .cust_Products_grid_section .inner_all_prod .product {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .cust_Products_grid_section .inner_all_prod .product .image,
+    .cust_Products_grid_section .inner_all_prod .product .image img {
+        height: 350px;
+    }
+}
